@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Result</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        #a1{
+            padding-top: 1vh;
+            float: left;
+            width: 33.33%;
+            padding-bottom: 3vh;
+        }
+        #b1{
+            padding-top: 1vh;
+            float: left;
+            width: 33.33%;
+            padding-bottom: 3vh;
+        }
+        #c1{
+            padding-top: 1vh;
+            float: right;
+            width: 33.33%;
+            padding-bottom: 3vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>GAME OVER</h1>
+    <h2>{{ res }}</h2>
+    <br>
+    <hr>
+    <h3>Score Card</h3>
+    <h4 id="a1" >A<br>
+        {% for x in ag %}
+            {{ x }}<br>
+        {% endfor %}
+    </h4>
+
+    <h4 id="b1" >B<br>
+        {% for x in bg %}
+            {{ x }}<br>
+        {% endfor %}
+    </h4>
+
+    <h4 id="c1" >C<br>
+        {% for x in cg %}
+            {{ x }}<br>
+        {% endfor %}
+    </h4>
+    <br>
+
+
+</body>
+</html>

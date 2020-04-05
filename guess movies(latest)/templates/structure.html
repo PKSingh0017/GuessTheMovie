@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div style="display: flex;">
+    <div class="img" style="float: left;width: 15%;">
+        <img src="../static/icon.jpeg" alt="Enigma" style="width: 40%;">
+        <p style="font-size: xx-large;">{{q}}</p>
+    </div>
+
+    <div style="float: left;width: 70%;">
+    <div class="star" style=" font-size:150%;"><h1>{{p}}</h1></div>
+
+    {% if display %}
+        <h2>LAST MOVIE : {{ display }}</h2>
+    {% else %}
+        <h2>Keep Guessing</h2>
+    {% endif %}
+
+    {% block action %}{% endblock %}
+    </div>
+    <div class="turn" style="float: right;width: 15%;">
+        <h1><em>{{ title }}</em></h1>
+    </div>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <hr>
+    <h1>Score Card</h1>
+    <div class="container2">
+    <div class="item1" style="background-color: rgb(0, 0, 0);
+    border:2px solid #11AA11;
+    border-radius: 25px;
+    height:100px;
+    padding-top: 20px;"><h2>A</h2><h2>{{rA}}</h2></div>
+    <div class="item2" style="background-color: rgb(0, 0, 0);
+    border:2px solid #11AA11;
+    border-radius: 25px;
+    height:100px;
+    padding-top: 20px;"><h2>B</h2><h2>{{rB}}</h2></div>
+    <div class="item3" style="background-color: rgb(0, 0, 0);
+    border:2px solid #11AA11;
+    border-radius: 25px;
+    height:100px;
+    padding-top: 20px;"><h2>C</h2><h2>{{rC}}</h2></div>
+    </div>
+    <hr>
+    {% block links %}{% endblock %}
+
+</body>
+</html>
