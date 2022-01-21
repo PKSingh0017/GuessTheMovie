@@ -23,7 +23,7 @@ gunicorn==19.9.0
 httplib2==0.9.2
 idna==2.6
 ipykernel==5.1.1
-ipython==7.6.1
+ipython==7.16.3
 ipython-genutils==0.2.0
 ipywidgets==7.5.0
 itsdangerous==1.1.0
